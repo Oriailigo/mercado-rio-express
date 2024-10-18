@@ -436,6 +436,22 @@ figure.effect-ming:hover h1 {
 	transform: scale3d(1,1,1);
 }
 
+figure.effect-ming p {
+    font-size: 1.3em;
+	opacity: 0;
+	-webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+	transition: opacity 0.35s, transform 0.35s;
+	-webkit-transform: scale(1.5);
+	transform: scale(1.5);
+}
+
+figure.effect-ming:hover figcaption::before,
+figure.effect-ming:hover p {
+	opacity: 1;
+	-webkit-transform: scale3d(1,1,1);
+	transform: scale3d(1,1,1);
+}
+
 figure.effect-ming:hover figcaption { background-color: rgba(58,52,42,0); }
 figure.effect-ming:hover img { opacity: 0.4; }
 
@@ -647,3 +663,67 @@ select:not([multiple]) {
 
     .tm-social-links li { margin-right: 3px; }
 }
+
+/* imagenes */
+.cont-img{
+    padding-bottom: 10rem;   
+    margin-bottom: 20rem;
+}
+.image-container {
+    position: relative;
+    width: 100%;
+    max-width: 400px;
+  }
+
+  .image-container img {
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 100%;
+    height: auto;
+    
+  }
+
+  .image1 {
+    z-index: 3;
+    margin-left: 5rem!important;
+  }
+
+  .image2 {
+    z-index: 2;
+    top: 10rem;
+  }
+
+  .image3 {
+    z-index: 1;
+    top: 20rem;
+    margin-left: 5rem!important;
+  }
+
+  /* Estilos para dispositivos móviles */
+  @media (max-width: 767px) {
+    .image1, .image2 {
+      width: 250px!important;
+  
+    }
+    .image1 {     
+        margin-left: 0rem!important;
+      }
+    .image2 {     
+        top: 5rem;
+      }
+
+      .image3 {     
+        top: 10rem;
+        margin-left: 0rem!important;
+      }
+
+      .cont-img{
+        padding-bottom: 6rem;   
+        margin-bottom: 15rem;
+        display: flex!important;
+        justify-content: center!important;
+    }
+   
+  }
