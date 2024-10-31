@@ -1,92 +1,130 @@
-const itemsPerPage = 5; // Cambia este valor según cuántos elementos deseas mostrar por página
+const itemsPerPage = 8; // Cambia este valor según cuántos elementos deseas mostrar por página
 let currentPage = 1;
 
 // Arreglo de objetos con la información de cada producto
 const items = [
     {
         units: "16 unidades",
-        price: "$3249",
-        title: "Toallas Femeninas Nosotras Nocturna",
-        imgSrc: "img/img-03.jpg"
+        price: "$3065",
+        title: "AEROSOL BUBBLEGUM SAPHIRUS",
+        imgSrc: "img/productos/1.jpeg"
     },
     {
         units: "10 unidades",
-        price: "$2499",
-        title: "Toallas Femeninas Nosotras Diurna",
-        imgSrc: "img/img-04.jpg"
+        price: "$3065",
+        title: "AEROSOL FLORES BLANCAS SAPHIRUS",
+        imgSrc: "img/productos/2.jpeg"
     },
     {
         units: "20 unidades",
-        price: "$1999",
-        title: "Toallas Femeninas Nosotras Regular",
-        imgSrc: "img/img-05.jpg"
+        price: "$3065",
+        title: "AEROSOL CITRUS SAPHIRUS",
+        imgSrc: "img/productos/3.jpeg"
     },
     {
         units: "12 unidades",
-        price: "$2799",
-        title: "Toallas Femeninas Nosotras Extra",
-        imgSrc: "img/img-06.jpg"
+        price: "$2759",
+        title: "AROMATIZADOR TEXTIL PITANGA SAPHIRUS",
+        imgSrc: "img/productos/4.jpeg"
     },
     {
         units: "12 unidades",
-        price: "$2799",
-        title: "Toallas Femeninas Nosotras Extra",
-        imgSrc: "img/img-07.jpg"
+        price: "$2759",
+        title: "AROMATIZADOR TEXTIL MARACUYÁ SAPHIRUS",
+        imgSrc: "img/productos/5.jpeg"
     },
     {
         units: "12 unidades",
-        price: "$2799",
-        title: "Toallas Femeninas Nosotras Extra",
-        imgSrc: "img/img-08.jpg"
+        price: "$209",
+        title: "POLVO PARA PREPARAR BEBIDA ARCOR LIMONADA 18grs",
+        imgSrc: "img/productos/6.jpeg"
     },
     {
         units: "12 unidades",
-        price: "$2799",
-        title: "Toallas Femeninas Nosotras Extra",
-        imgSrc: "img/img-09.jpg"
+        price: "$209",
+        title: "POLVO PARA PREPARAR BEBIDA ARCOR MULTIFRUTA 18grs",
+        imgSrc: "img/productos/7.jpeg"
     },
     {
         units: "12 unidades",
-        price: "$2799",
-        title: "Toallas Femeninas Nosotras Extra",
-        imgSrc: "img/img-10.jpg"
+        price: "$209",
+        title: "POLVO PARA PREPARAR BEBIDA ARCOR NARANJA 18grs",
+        imgSrc: "img/productos/8.jpeg"
     },
     {
         units: "12 unidades",
-        price: "$2799",
-        title: "Toallas Femeninas Nosotras Extra",
-        imgSrc: "img/img-11.jpg"
+        price: "$1029",
+        title: "GALLETITAS CRACKERS LA PROVIDENCIA 303grs",
+        imgSrc: "img/productos/9.jpeg"
     },
     {
         units: "12 unidades",
-        price: "$2799",
-        title: "Toallas Femeninas Nosotras Extra",
-        imgSrc: "img/img-12.jpg"
+        price: "$729",
+        title: "VINAGRE DE ALCOHOL FAVINCO 500CM3",
+        imgSrc: "img/productos/10.jpeg"
     },
     {
         units: "12 unidades",
-        price: "$2799",
-        title: "Toallas Femeninas Nosotras Extra",
-        imgSrc: "img/img-13.jpg"
+        price: "$1169",
+        title: "PAPEL HIGIÉNICO OKEY TEXTURADO 4X30Mt",
+        imgSrc: "img/productos/11.jpeg"
     },
     {
         units: "12 unidades",
-        price: "$2799",
-        title: "Toallas Femeninas Nosotras Extra",
-        imgSrc: "img/img-14.jpg"
+        price: "$749",
+        title: "BIZCOCHOS DULCES DON SATUR 200grs",
+        imgSrc: "img/productos/12.jpeg"
     },
     {
         units: "12 unidades",
-        price: "$2799",
-        title: "Toallas Femeninas Nosotras Extra",
-        imgSrc: "img/img-15.jpg"
+        price: "$3869",
+        title: "VINO TINTO CORDERO CON PIEL DE LOBO MALBEC 750CM3",
+        imgSrc: "img/productos/13.jpeg"
     },
     {
         units: "12 unidades",
-        price: "$2799",
-        title: "Toallas Femeninas Nosotras Extra",
-        imgSrc: "img/img-16.jpg"
+        price: "$4259",
+        title: "APERITIVO GANCIA AMERICANO 950CM3",
+        imgSrc: "img/productos/14.jpeg"
     },
+    {
+        units: "12 unidades",
+        price: "$1869",
+        title: "ALIMENTO A BASE DE AZÚCAR HILERET LIGHT 500grs",
+        imgSrc: "img/productos/15.jpeg"
+    },
+    {
+        units: "12 unidades",
+        price: "$3249",
+        title: "TOALLITAS FEMENINAS NOSOTRAS NOCTURNA SUAVE 16uni",
+        imgSrc: "img/productos/16.jpeg"
+    },
+    {
+        units: "12 unidades",
+        price: "$10.999",
+        title: "FER. BRANCA 750 cc",
+        imgSrc: "img/productos/17.jpeg"
+    },
+    {
+        units: "12 unidades",
+        price: "$780",
+        title: "JABON EN POLVO ALA LAVADO A MANO CON BICARBONATO 4",
+        imgSrc: "img/productos/18.jpeg"
+    },
+    {
+        units: "12 unidades",
+        price: "$1889",
+        title: "Yerba mate mañanita 4 flex con palo 500grs",
+        imgSrc: "img/productos/19.jpeg"
+    },
+    {
+        units: "12 unidades",
+        price: "$715",
+        title: "Harina de trigo favorita 000 1kgs",
+        imgSrc: "img/productos/20.jpeg"
+    },
+ 
+   
     // Agrega más objetos según sea necesario
 ];
 
