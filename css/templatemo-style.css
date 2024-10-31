@@ -190,8 +190,13 @@ a:hover { color:#009999; }
 .navbar-brand i { font-size: 2rem; }
 
 .tm-hero {
+    background-image: url('img/portada1.png'); /* Si el atributo data-image-src no está configurado */
+   
     min-height: 200px;
     background: transparent;
+    background-position: center 80%; /* Ajusta el segundo valor para bajar la imagen */
+    background-size: cover;
+   
 }
 
 .tm-mt-60 { margin-top: 60px; }
